@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça a Luna, da Destinos Locação de Motorhomes.">
+  <title>Luna | Destinos Locação de Motorhomes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=PT+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .vehicle-hero{background:var(--wine);color:var(--cream);padding:150px 0 80px}
+    .vehicle-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:end}
+    .vehicle-kicker{font-size:11px;letter-spacing:.22em;font-weight:700;color:var(--sand);text-transform:uppercase;margin-bottom:18px}
+    .vehicle-hero h1{font-size:clamp(64px,8vw,110px);margin:0 0 18px;line-height:.95}
+    .vehicle-hero h1 em{color:var(--sand)}
+    .vehicle-subtitle{font-family:var(--serif);font-size:25px;font-style:italic;margin:0;max-width:520px}
+    .vehicle-intro{color:rgba(232,216,195,.76);font-size:15px;max-width:470px;margin:0}
+    .vehicle-back{display:inline-flex;margin-top:32px;color:var(--sand);font-size:12px;font-weight:700}
+    .gallery-section{background:#eee2cf;padding:90px 0}
+    .gallery-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}
+    .gallery-heading h2{font-size:clamp(42px,5vw,65px)}
+    .gallery-heading p{max-width:340px;color:rgba(44,40,41,.68);font-size:14px}
+    .luna-gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:230px;gap:14px}
+    .gallery-item{position:relative;overflow:hidden;background:var(--wine);margin:0}
+    .gallery-item:nth-child(1){grid-column:span 7;grid-row:span 2}
+    .gallery-item:nth-child(2){grid-column:span 5}
+    .gallery-item:nth-child(3){grid-column:span 5}
+    .gallery-item:nth-child(4){grid-column:span 4}
+    .gallery-item:nth-child(5){grid-column:span 4}
+    .gallery-item:nth-child(6){grid-column:span 4}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+    .gallery-item:hover img{transform:scale(1.03)}
+    .gallery-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:var(--sand);font-family:var(--serif);font-size:22px}
+    .gallery-placeholder small{display:block;font-family:var(--sans);font-size:9px;text-transform:uppercase;letter-spacing:.15em;margin-top:8px;opacity:.65}
+    .vehicle-story{background:var(--cream);padding:110px 0}
+    .vehicle-story-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:10%;align-items:start}
+    .vehicle-story h2{margin-bottom:28px}
+    .vehicle-story-copy p{font-size:17px;line-height:1.8;color:rgba(44,40,41,.74);max-width:620px}
+    .vehicle-points{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);margin-top:30px}
+    .vehicle-point{background:var(--cream);padding:22px}
+    .vehicle-point span{display:block;color:var(--wine);font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin-bottom:7px}
+    .vehicle-point strong{font-family:var(--serif);font-size:21px;font-weight:400}
+    .vehicle-cta{background:var(--olive);color:var(--cream);padding:100px 0;text-align:center}
+    .vehicle-cta h2{max-width:800px;margin:0 auto 25px}
+    .vehicle-cta p{max-width:560px;margin:0 auto 30px;color:rgba(232,216,195,.76)}
+    .vehicle-cta .btn{margin:0 5px}
+    @media(max-width:800px){
+      .vehicle-hero{padding:125px 0 65px}
+      .vehicle-hero-grid,.vehicle-story-grid{grid-template-columns:1fr;gap:35px}
+      .gallery-heading{align-items:start;flex-direction:column}
+      .luna-gallery{grid-template-columns:1fr 1fr;grid-auto-rows:190px}
+      .gallery-item:nth-child(1),.gallery-item:nth-child(2),.gallery-item:nth-child(3),
+      .gallery-item:nth-child(4),.gallery-item:nth-child(5),.gallery-item:nth-child(6){grid-column:span 1;grid-row:span 1}
+      .gallery-item:nth-child(1){grid-column:span 2}
+      .vehicle-points{grid-template-columns:1fr}
+    }
+    @media(max-width:500px){
+      .luna-gallery{grid-template-columns:1fr;grid-auto-rows:240px}
+      .gallery-item:nth-child(1){grid-column:span 1}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Destinos - início">
+        <img src="assets/logo.png" alt="Destinos Locação de Motorhomes">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="index.html#experiencia">A experiência</a>
+        <a href="index.html#frota">A frota</a>
+        <a href="index.html#como-funciona">Como funciona</a>
+        <a href="index.html#contato">Contato</a>
+        <a class="nav-cta" href="https://wa.me/5551999272763?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Destinos%20e%20quero%20saber%20mais%20sobre%20a%20Luna." target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="vehicle-hero">
+      <div class="container vehicle-hero-grid">
+        <div>
+          <p class="vehicle-kicker">DESTINOS · 01 / FROTA</p>
+          <h1>Luna<br><em>para viver.</em></h1>
+          <p class="vehicle-subtitle">Calma, estrada e noites tranquilas.</p>
+          <a class="vehicle-back" href="index.html#frota">← Voltar para a frota</a>
+        </div>
+        <p class="vehicle-intro">Inspirada na lua, a Luna foi criada para quem ama noites tranquilas, viagens a dois e momentos que ficam na memória. Uma experiência para desacelerar, escolher a rota e deixar o caminho fazer parte da viagem.</p>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="container">
+        <div class="gallery-heading">
+          <div>
+            <p class="section-kicker">Por dentro e por fora</p>
+            <h2>Conheça a <em>Luna.</em></h2>
+          </div>
+          <p>As fotos da Luna entram nesta galeria conforme forem adicionadas à pasta <strong>assets/luna/</strong>.</p>
+        </div>
+
+        <div class="luna-gallery">
+          <figure class="gallery-item">
+            <img src="assets/luna/luna-01.jpg" alt="Luna — foto principal" onerror="this.style.display='none'">
+            <div class="gallery-placeholder">Luna<small>foto principal</small></div>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/luna/luna-02.jpg" alt="Luna — exterior" onerror="this.style.display='none'">
+            <div class="gallery-placeholder">Exterior<small>foto da Luna</small></div>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/luna/luna-03.jpg" alt="Luna — lateral" onerror="this.style.display='none'">
+            <div class="gallery-placeholder">Detalhes<small>foto da Luna</small></div>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/luna/luna-04.jpg" alt="Luna — interior" onerror="this.style.display='none'">
+            <div class="gallery-placeholder">Interior<small>foto da Luna</small></div>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/luna/luna-05.jpg" alt="Luna — ambiente" onerror="this.style.display='none'">
+            <div class="gallery-placeholder">Ambiente<small>foto da Luna</small></div>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/luna/luna-06.jpg" alt="Luna — viagem" onerror="this.style.display='none'">
+            <div class="gallery-placeholder">Na estrada<small>foto da Luna</small></div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="vehicle-story">
+      <div class="container vehicle-story-grid">
+        <div>
+          <p class="section-kicker">A personalidade da Luna</p>
+          <h2>Uma casa que<br><em>acompanha você.</em></h2>
+        </div>
+        <div class="vehicle-story-copy">
+          <p>A Luna foi pensada para quem encontra prazer nas pequenas coisas: o café antes de pegar a estrada, uma parada sem pressa, uma vista diferente pela janela e aquela sensação de dormir longe de casa sem deixar o conforto para trás.</p>
+          <p>Ela representa calma, romantismo e a magia de dormir sob o céu estrelado — uma van para transformar o caminho em parte da experiência.</p>
+
+          <div class="vehicle-points">
+            <div class="vehicle-point">
+              <span>01 · Experiência</span>
+              <strong>Viagens a dois</strong>
+            </div>
+            <div class="vehicle-point">
+              <span>02 · Atmosfera</span>
+              <strong>Noites tranquilas</strong>
+            </div>
+            <div class="vehicle-point">
+              <span>03 · Estilo</span>
+              <strong>Conforto com personalidade</strong>
+            </div>
+            <div class="vehicle-point">
+              <span>04 · Destinos</span>
+              <strong>Estrada sem pressa</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="vehicle-cta">
+      <div class="container">
+        <p class="section-kicker light">Sua próxima história começa aqui</p>
+        <h2>Quer saber mais sobre<br><em>a Luna?</em></h2>
+        <p>Fale com a Destinos pelo WhatsApp e consulte disponibilidade, valores e todos os detalhes da locação.</p>
+        <a class="btn btn-light" href="https://wa.me/5551999272763?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Destinos%20e%20quero%20consultar%20a%20Luna." target="_blank" rel="noopener">Consultar a Luna pelo WhatsApp</a>
+        <a class="btn btn-ghost" href="index.html#frota">Ver outras vans</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <img src="assets/logo.png" alt="Destinos Locação de Motorhomes" class="footer-logo">
+      <p>Liberdade e conforto para ir,<br>memórias para ficar.</p>
+      <div class="footer-links">
+        <a href="index.html">Início</a>
+        <a href="index.html#frota">Frota</a>
+        <a href="index.html#contato">Contato</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Destinos Locação de Motorhomes</span>
+      <span>Montenegro · Rio Grande do Sul</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

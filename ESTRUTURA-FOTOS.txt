@@ -1,0 +1,17 @@
+ORGANIZAÇÃO DAS FOTOS — DESTINOS
+
+assets/luna/
+  Fotos da Luna
+
+assets/oliva/
+  Fotos da Oliva
+
+assets/serena/
+  Fotos da Serena
+
+assets/destinos/
+  Fotos institucionais, viagens e lifestyle
+
+Não renomear a pasta assets.
+Quando novas fotos forem adicionadas, o site poderá ser atualizado para criar
+galerias e páginas/seções individuais sem mudar a estrutura principal.
